@@ -64,16 +64,16 @@
 
 <meta name="twitter:title" content="一鍵完成Python環境設定 | 輕鬆上手雲端開發平台colab" />
 <meta name="twitter:description"
-  content="章節目錄  1 : 安裝Anaconda
-2 : 建立虛擬開發環境
-3 : 快速安裝Python套件" />
+  content="章節目錄  1 : 快速認識Colab
+2 : Colab安裝設定
+3 : Colab快速上手" />
 
 
 
 <meta property="og:title" content="一鍵完成Python環境設定 | 輕鬆上手雲端開發平台colab" />
-<meta property="og:description" content="章節目錄  1 : 安裝Anaconda
-2 : 建立虛擬開發環境
-3 : 快速安裝Python套件" />
+<meta property="og:description" content="章節目錄  1 : 快速認識Colab
+2 : Colab安裝設定
+3 : Colab快速上手" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://QuantHero-python.github.io/blog/python-colab/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2022-02-01T11:07:10&#43;06:00" />
@@ -406,103 +406,96 @@ if (!doNotTrack) {
           <div class="post-content post-excerpt">
             <h2 id="章節目錄"><strong>章節目錄</strong></h2>
 <blockquote>
-<h3 id="1--安裝anacondabrbr2--建立虛擬開發環境brbr3--快速安裝python套件brbr4--寫出自己的第一行程式碼"><strong>1 : 安裝Anaconda</strong><br><br><strong>2 : 建立虛擬開發環境</strong><br><br><strong>3 : 快速安裝Python套件</strong><br><br><strong>4 : 寫出自己的第一行程式碼</strong></h3>
+<h3 id="1--快速認識colabbrbr2--colab安裝設定brbr3--colab快速上手brbr4--連接google-drivebrbr5--markdown魔法筆記"><strong>1 : 快速認識Colab</strong><br><br><strong>2 : Colab安裝設定</strong><br><br><strong>3 : Colab快速上手</strong><br><br><strong>4 : 連接Google Drive</strong><br><br><strong>5 : Markdown魔法筆記</strong></h3>
 </blockquote>
 <hr>
 <hr>
 <hr>
-<h2 id="-1--安裝anaconda"><strong>✦ 1 : 安裝Anaconda</strong></h2>
-<h3 id="1-1-前往anacondahttpswwwanacondacom安裝系統對應的版本"><strong>1-1 前往<a href="https://www.anaconda.com/"><code>Anaconda</code></a>安裝系統對應的版本</strong></h3>
-<p><img src="/images/blog/anaconda.png" alt=""></p>
+<h2 id="-1--快速認識colab"><strong>✦ 1 : 快速認識Colab</strong></h2>
+<h3 id="1-1-colab介紹"><strong>1-1 Colab介紹</strong></h3>
+<p>Colab是由Google開發的雲端程式編輯器，提供程式虛擬機並支援Python和機器學習等演算法。<br>
+不需要額外下載安裝軟體就可以直接使用Python，甚至<code>不需要花費大量的時間在環境的設定及專案管理</code>，對開發新手來說相當友善。<br><br>
+Colab的一大優勢在於提供了類似Jupyter notebook的程式編輯介面，並提供免費的GPU，<code>預設安裝常用的Python套件</code>，例如pandas、numpy等，讓你可以直接使用!<br><br>
+但Colab的小缺點是若閒置一段時間虛擬機就會停止運作，此時需要再重新連接，同時原先存好的變數則會重新來過，這是和本地端使用Jupyter lab運行程式最大的差別之一，簡單來看雖然本地端安裝jupyter lab比較麻煩，但好處是每次打開不需要重新安裝套件，而且不用擔心閒置過久導致虛擬機中斷連線等問題。<br><br>
+綜合起來還是比較推薦新手使用Colab，因為透過雲端虛擬機在任何地點只需要一台電腦，登入Google帳號就可以無差別地編寫Python囉!</p>
 <hr>
-<h3 id="1-2-安裝jupyter-lab"><strong>1-2 安裝Jupyter lab</strong></h3>
-<p>打開anaconda prompt輸入指令:</p>
-<pre><code>conda install jupyterlab
-</code></pre><p><img src="/images/blog/install-jupyterlab.png" alt=""></p>
+<h2 id="-2--colab安裝設定"><strong>✦ 2 : Colab安裝設定</strong></h2>
+<h3 id="2-1-colab安裝"><strong>2-1 Colab安裝</strong></h3>
+<p>開啟<u><a href="https://drive.google.com/drive/my-drive"><code>Google雲端硬碟</code></a></u>➨點選<code>新增</code>➨選擇<code>連結更多應用程式</code>➨搜尋<code>colaboratory</code></p>
+<p><img src="/images/blog/google-mydrive.png" alt=""></p>
+<p>選擇第一個橘色logo的進行安裝</p>
+<p><img src="/images/blog/install-colab.png" alt=""></p>
 <hr>
-<h2 id="-2--建立虛擬開發環境"><strong>✦ 2 : 建立虛擬開發環境</strong></h2>
-<h3 id="2-1-新增虛擬環境"><strong>2-1 新增虛擬環境</strong></h3>
-<p>anaconda prompt內輸入指令<code>conda create -n 環境名稱 python=版本</code><br>
-Example :</p>
-<pre><code>conda create -n iTrading python=3.9
+<h3 id="2-2-colab設定"><strong>2-2 Colab設定</strong></h3>
+<p>點選<code>新增</code>➨<code>更多</code>➨點選<code>Google Colaboratory</code>
+<img src="/images/blog/open-colab.png" alt=""></p>
+<p>點選上方<code>工具</code>➨<code>設定</code>➨點選<code>編輯器</code><br>
+取消❌<code>自動觸發程式碼完成功能</code><br>
+勾選✅<code>顯示行數</code>
+<img src="/images/blog/colab-settings.png" alt=""></p>
+<hr>
+<h3 id="2-3-使用gpu模式"><strong>2-3 使用GPU模式</strong></h3>
+<p>點選<code>編輯</code>➨<code>筆記本設定</code>➨選擇<code>GPU</code><br>
+如此一來未來在使用機器學習時將可以大幅減少程式運作的時間
+<img src="/images/blog/colab-gpu.png" alt=""></p>
+<hr>
+<h2 id="-3--colab快速上手"><strong>✦ 3 : Colab快速上手</strong></h2>
+<h3 id="3-1-colab入門"><strong>3-1 Colab入門</strong></h3>
+<p>notebook名稱預設為Untitled0，只要點選一下就可以更改名稱<br>
+剛開始預設是尚未連接虛擬機，這邊可以手動按<code>連線</code>連接</p>
+<p><img src="/images/blog/colab-rename.png" alt=""></p>
+<hr>
+<h3 id="3-2-安裝python套件"><strong>3-2 安裝Python套件</strong></h3>
+<p>Colab強大的功能在於可以直接拿來作Shell使用，只需要在指令前方加<code>!</code>即可轉換語法<br>舉例來說:安裝pandas 1.5.1 只要在儲存格直接輸入</p>
+<pre><code>!pip install pandas==1.5.1
+</code></pre><p>即可完成安裝</p>
+<p><img src="/images/blog/colab-install-pandas.png" alt=""></p>
+<p>如果要查看已安裝套件只要輸入</p>
+<pre><code>!pip list
+</code></pre><p>就可以發現Colab已經預設安裝許多常用套件</p>
+<hr>
+<h3 id="3-3-執行py檔"><strong>3-3 執行py檔</strong></h3>
+<p>若要執行資料夾中其他py檔，語法為<code>%run 檔案名稱.py</code></p>
+<pre><code>%run plot.py
+</code></pre><p>這部分屬於比較高階的用法，初期比較用不到~</p>
+<hr>
+<h2 id="-4--連接google-drive"><strong>✦ 4 : 連接Google Drive</strong></h2>
+<p>如果要使用Google Drive內的檔案(例如股價.csv)必須先讓Colab連接上雲端硬碟，有分為手動和自動操作</p>
+<h3 id="4-1-手動連線google-drive"><strong>4-1 手動連線Google Drive</strong></h3>
+<p>點選<code>檔案</code>➨<code>掛接雲端硬碟</code>➨<code>連線至Google雲端硬碟</code></p>
+<p><img src="/images/blog/colab-connect-googledrive.png" alt=""></p>
+<p>連接成功後會發現檔案區多了<code>drive</code></p>
+<p><img src="/images/blog/colab-drive.png" alt=""></p>
+<hr>
+<h3 id="4-2-自動連線google-drive"><strong>4-2 自動連線Google Drive</strong></h3>
+<p>在儲存格內輸入</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#080;font-weight:bold">from</span> <span style="color:#b06;font-weight:bold">google.colab</span> <span style="color:#080;font-weight:bold">import</span> drive
 
-activate iTrading
-
-pip install ipykernel
-
-ipython kernel install --user --name=iTrading
-</code></pre><p><img src="/images/blog/create-env.png" alt=""></p>
+drive.mount(<span style="color:#d20;background-color:#fff0f0">&#39;/content/drive&#39;</span>)
+</code></pre></div><p>這個驗證帳號的程序只需要執行一次，未來重新打開在執行程式碼時就會自動連接Google Drive了~</p>
 <hr>
-<h3 id="2-2-複製目前環境"><strong>2-2 複製目前環境</strong></h3>
-<p>有時需要測試專案內的某些功能但又怕破壞目前Python環境內的套件版本，這時就可以複製一樣的環境來進行測試。指令為<code>conda create -n 環境名稱 --clone root</code></p>
-<pre><code>conda create -n testing --clone root
-</code></pre><hr>
-<h3 id="2-3-查詢所有虛擬環境"><strong>2-3 查詢所有虛擬環境</strong></h3>
-<p>建立非常多專案環境後可透過以下指令查詢目前所有的虛擬環境</p>
-<pre><code>conda info -e
-</code></pre><hr>
-<h3 id="2-4-移除虛擬環境"><strong>2-4 移除虛擬環境</strong></h3>
-<p>如果專案環境不再使用可以透過指令移除<code>conda remove -n 環境名稱 --all</code></p>
-<pre><code>conda remove -n testing --all
-</code></pre><hr>
-<h2 id="-3--快速安裝python套件"><strong>✦ 3 : 快速安裝Python套件</strong></h2>
-<h3 id="3-1-查詢已安裝套件版本"><strong>3-1 查詢已安裝套件版本</strong></h3>
-<p>在安裝或更新套件前需要確認目前環境的套件是否有版本不相容的問題，這時就需要先查看環境的版本</p>
-<pre><code>pip list
-</code></pre><hr>
-<h3 id="3-2-安裝單一套件"><strong>3-2 安裝單一套件</strong></h3>
-<p>安裝套件只需要輸入一行指令<code>pip install 套件名稱=版本</code><br>
-Example : 安裝pandas 1.5.1</p>
-<pre><code>pip install pandas==1.5.1
-</code></pre><hr>
-<h3 id="3-3-一鍵安裝所有指定套件"><strong>3-3 一鍵安裝所有指定套件</strong></h3>
-<p>首先將已安裝套件版本文字檔輸出至C/user/userName</p>
-<pre><code>pip freeze &gt; requirements.txt
-</code></pre><p>開啟requirements.txt並複製貼上套件名稱和版本<code>pandas==1.5.1</code><br>
-建議安裝以下套件方便後續教學使用</p>
-<pre><code>requests==2.27.1
-beautifulsoup4==4.10.0
-selenium==4.1.0
-ipywidgets==7.7.0
-seaborn==0.11.2
-plotly==5.6.0
-pyecharts==1.9.1
-yfinance==0.1.70
-python-binance==1.0.15
-pandas==1.3.5
-pandas_ta==0.3.14b
-numpy==1.21.5
-schedule==1.1.0
-</code></pre><p>複製貼上上述套件後直接在anaconda prompt上輸入指令</p>
-<pre><code>pip install -r requirements.txt
-</code></pre><hr>
-<h2 id="-4--寫出自己的第一行程式碼"><strong>✦ 4 : 寫出自己的第一行程式碼</strong></h2>
-<h3 id="4-1-開啟jupyter-lab"><strong>4-1 開啟Jupyter lab</strong></h3>
-<p>套件安裝完畢後關掉anaconda prompt再重新開啟，輸入指令</p>
-<pre><code>jupyterlab
-</code></pre><hr>
-<h3 id="4-2-jupyter-lab設定"><strong>4-2 Jupyter lab設定</strong></h3>
-<p>點選settings ➨ Advanced Settings Editor
-<img src="/images/blog/jupyterlab-settings.png" alt=""></p>
-<p>點選Notebook複製System Defaults貼至User Preferences，並將<code>lineNumbers</code>的false改成true
-<img src="/images/blog/linenumber.png" alt=""></p>
+<h2 id="-5--markdown魔法筆記"><strong>✦ 5 : Markdown魔法筆記</strong></h2>
+<h3 id="5-1-初階用法"><strong>5-1 初階用法</strong></h3>
+<p>一般常用的格式設定為<code>文字大小</code>、<code>粗體斜體</code>、<code>程式碼格式</code>、<code>指定程式碼格式</code>、<code>DataFrame格式</code>、<code>超連結</code>等<br>點選<code>+文字</code>即可開啟markdown文字格</p>
+<p><img src="/images/blog/colab-markdown.png" alt=""></p>
+<ul>
+<li>文字大小 ▶ 使用<code>#</code>決定，越多<code>#</code>表示字體越小</li>
+<li>粗體 ▶ 使用<code>**文字**</code></li>
+<li>斜體 ▶ 使用<code>*文字*</code></li>
+</ul>
 <hr>
-<h3 id="4-3-選擇專案環境並開啟notebook"><strong>4-3 選擇專案環境並開啟Notebook</strong></h3>
-<p>點選launcher並選擇自己創建的環境名稱，如此一來就可以開啟新的Notebook準備寫程式囉~
-<img src="/images/blog/launcher.png" alt=""></p>
-<hr>
-<h3 id="4-4-跟世界說聲hello"><strong>4-4 跟世界說聲Hello</strong></h3>
-<p>在儲存格(cells)內輸入</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#080;font-weight:bold">print</span>(<span style="color:#d20;background-color:#fff0f0">&#39;Hello World !&#39;</span>)
-</code></pre></div><p>點選上方三角形執行程式碼(快捷鍵:<code>shift + enter</code> 強烈建議學起來!)
-<img src="/images/blog/helloworld.png" alt=""></p>
-<p>這樣就成功執行我們的第一行程式碼囉~~~</p>
+<h3 id="5-2-進階用法"><strong>5-2 進階用法</strong></h3>
+<p>可使用GUI介面調整程式碼參數<br>點選<code>+程式碼</code>即可開啟code格式</p>
+<p>用法為參數後方+<code>#@param {type:'變數類型'}</code><br>變數類型可透過右方編輯欄位選擇適合的類型</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">date = <span style="color:#d20;background-color:#fff0f0">&#34;2023-01-09&#34;</span> <span style="color:#888">#@param {type:&#34;date&#34;}</span>
+<span style="color:#080;font-weight:bold">print</span>(date)
+</code></pre></div><h3 id="詳細教學都放在-markdown語法教學imagesblogopen-in-colabsvghttpscolabresearchgooglecomdrive1ok0h0nja7i0ypcycfxqeu8ijulpykxd8uspsharingbr強烈建議自己打開來玩玩看">詳細教學都放在 <a href="https://colab.research.google.com/drive/1ok0h0nJA7i0ypCycfXqEU8iJUlPYKXD8?usp=sharing"><strong><code>Markdown語法教學</code></strong><img src="/images/blog/open-in-colab.svg" alt=""></a><br>強烈建議自己打開來玩玩看~~</h3>
 <hr>
 <hr>
 <hr>
 <h2 id="結論"><strong>結論</strong></h2>
 <blockquote>
-<h4 id="這個單元教導大家安裝anaconda建立專案環境並快速一行指令安裝所有套件版本成功執行自己的第一行程式碼下一個單元會示範更適合新手撰寫程式的介面省去許多設定環境的步驟直接在雲端上就可以開始寫程式囉"><strong>這個單元教導大家安裝Anaconda，建立專案環境，並快速一行指令安裝所有套件版本，成功執行自己的第一行程式碼，下一個單元會示範更適合新手撰寫程式的介面，省去許多設定環境的步驟，直接在雲端上就可以開始寫程式囉!</strong></h4>
+<h4 id="相較於第一單元python新手安裝環境安裝anaconda後再於本地端建立專案環境並安裝常用套件等colab確實對於初學者來說友善不少甚至再也不用帶著筆電公司家裡兩地跑只要有一台可以上網的電腦隨時隨地都可以撰寫程式碼brbr唯一小小的缺點就是執行速度不如本地端來得順暢那大家可以根據自己的需求選擇要用哪一種方式來寫程式哦"><strong>相較於第一單元<code>Python新手安裝環境</code>安裝Anaconda後再於本地端建立專案環境，並安裝常用套件等，Colab確實對於初學者來說友善不少，甚至再也不用帶著筆電公司家裡兩地跑，只要有一台可以上網的電腦，隨時隨地都可以撰寫程式碼~<br><br>唯一小小的缺點就是執行速度不如本地端來得順暢，那大家可以根據自己的需求選擇要用哪一種方式來寫程式哦~</strong></h4>
 </blockquote>
 
           </div>
@@ -521,9 +514,9 @@ schedule==1.1.0
       </a>
       <div class="media-body">
         <h4 class="media-heading"><a href="/blog/python-colab/">一鍵完成Python環境設定 | 輕鬆上手雲端開發平台colab</a></h4>
-        <p>章節目錄  1 : 安裝Anaconda
-2 : 建立虛擬開發環境
-3 : 快速安裝Python套件</p>
+        <p>章節目錄  1 : 快速認識Colab
+2 : Colab安裝設定
+3 : Colab快速上手</p>
       </div>
     </div>
     

@@ -8,20 +8,29 @@
     <language>en-US</language>
     <lastBuildDate>Tue, 01 Feb 2022 11:07:10 +0600</lastBuildDate><atom:link href="https://QuantHero-python.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>anaconda</title>
-      <link>https://QuantHero-python.github.io/tags/anaconda/</link>
+      <title>colab</title>
+      <link>https://QuantHero-python.github.io/tags/colab/</link>
       <pubDate>Tue, 01 Feb 2022 11:07:10 +0600</pubDate>
       
-      <guid>https://QuantHero-python.github.io/tags/anaconda/</guid>
+      <guid>https://QuantHero-python.github.io/tags/colab/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>enviroment</title>
-      <link>https://QuantHero-python.github.io/tags/enviroment/</link>
+      <title>environment</title>
+      <link>https://QuantHero-python.github.io/tags/environment/</link>
       <pubDate>Tue, 01 Feb 2022 11:07:10 +0600</pubDate>
       
-      <guid>https://QuantHero-python.github.io/tags/enviroment/</guid>
+      <guid>https://QuantHero-python.github.io/tags/environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anaconda</title>
+      <link>https://QuantHero-python.github.io/tags/anaconda/</link>
+      <pubDate>Sat, 01 Jan 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/tags/anaconda/</guid>
       <description></description>
     </item>
     

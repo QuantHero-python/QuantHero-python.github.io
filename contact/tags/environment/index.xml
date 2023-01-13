@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>environment on QuantHero交易室 | Python &amp; TradingView</title>
+    <link>https://QuantHero-python.github.io/tags/environment/</link>
+    <description>Recent content in environment on QuantHero交易室 | Python &amp; TradingView</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 01 Feb 2022 11:07:10 +0600</lastBuildDate><atom:link href="https://QuantHero-python.github.io/tags/environment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一鍵完成Python環境設定 | 輕鬆上手雲端開發平台colab</title>
+      <link>https://QuantHero-python.github.io/blog/python-colab/</link>
+      <pubDate>Tue, 01 Feb 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/blog/python-colab/</guid>
+      <description>章節目錄  1 : 快速認識Colab
+2 : Colab安裝設定
+3 : Colab快速上手</description>
+    </item>
+    
+    <item>
+      <title>Python新手安裝環境 | 寫出自己的第一行程式碼</title>
+      <link>https://QuantHero-python.github.io/blog/python-environment/</link>
+      <pubDate>Sat, 01 Jan 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/blog/python-environment/</guid>
+      <description>章節目錄  1 : 安裝Anaconda
+2 : 建立虛擬開發環境
+3 : 快速安裝Python套件</description>
+    </item>
+    
+  </channel>
+</rss>

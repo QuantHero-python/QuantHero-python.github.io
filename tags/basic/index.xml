@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>basic on QuantHero交易室 | Python &amp; TradingView</title>
+    <link>https://QuantHero-python.github.io/tags/basic/</link>
+    <description>Recent content in basic on QuantHero交易室 | Python &amp; TradingView</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 01 Mar 2022 11:07:10 +0600</lastBuildDate><atom:link href="https://QuantHero-python.github.io/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>進入Python的第一堂課 | 一小時上手Python基礎語法</title>
+      <link>https://QuantHero-python.github.io/blog/python-basic/</link>
+      <pubDate>Tue, 01 Mar 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/blog/python-basic/</guid>
+      <description>章節目錄  1 : 認識變數型態
+2 : list與dict資料形式
+3 : 學會用for迴圈提升效率</description>
+    </item>
+    
+  </channel>
+</rss>

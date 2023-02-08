@@ -6,7 +6,18 @@
     <description>Recent content in Python on QuantHero交易室 | Python &amp; TradingView</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Mar 2022 11:07:10 +0600</lastBuildDate><atom:link href="https://QuantHero-python.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 11:07:10 +0600</lastBuildDate><atom:link href="https://QuantHero-python.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>超實用Python數據分析 | 掌握pandas資料科學技巧</title>
+      <link>https://QuantHero-python.github.io/blog/python-pandas/</link>
+      <pubDate>Fri, 01 Apr 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/blog/python-pandas/</guid>
+      <description>章節目錄  1 : 建立Series
+2 : 建立DataFrame
+3 : 資料讀取</description>
+    </item>
+    
     <item>
       <title>進入Python的第一堂課 | 一小時上手Python基礎語法</title>
       <link>https://QuantHero-python.github.io/blog/python-basic/</link>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pandas on QuantHero交易室 | Python &amp; TradingView</title>
+    <link>https://QuantHero-python.github.io/tags/pandas/</link>
+    <description>Recent content in pandas on QuantHero交易室 | Python &amp; TradingView</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 01 Apr 2022 11:07:10 +0600</lastBuildDate><atom:link href="https://QuantHero-python.github.io/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>超實用Python數據分析 | 掌握pandas資料科學技巧</title>
+      <link>https://QuantHero-python.github.io/blog/python-pandas/</link>
+      <pubDate>Fri, 01 Apr 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/blog/python-pandas/</guid>
+      <description>章節目錄  1 : 建立Series
+2 : 建立DataFrame
+3 : 資料讀取</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,11 +5,11 @@
 
 <head>
 	<meta charset="utf-8">
-<title>Python新手安裝環境 | 寫出自己的第一行程式碼</title>
+<title>超實用Python數據分析 | 掌握pandas資料科學技巧</title>
 
 
 
-<base href="https://QuantHero-python.github.io/blog/python-environment/">
+<base href="https://QuantHero-python.github.io/blog/python-pandas/">
 
 
 
@@ -62,22 +62,22 @@
 
 
 
-<meta name="twitter:title" content="Python新手安裝環境 | 寫出自己的第一行程式碼" />
+<meta name="twitter:title" content="超實用Python數據分析 | 掌握pandas資料科學技巧" />
 <meta name="twitter:description"
-  content="章節目錄  1 : 安裝Anaconda
-2 : 建立虛擬開發環境
-3 : 快速安裝Python套件" />
+  content="章節目錄  1 : 建立Series
+2 : 建立DataFrame
+3 : 資料讀取" />
 
 
 
-<meta property="og:title" content="Python新手安裝環境 | 寫出自己的第一行程式碼" />
-<meta property="og:description" content="章節目錄  1 : 安裝Anaconda
-2 : 建立虛擬開發環境
-3 : 快速安裝Python套件" />
+<meta property="og:title" content="超實用Python數據分析 | 掌握pandas資料科學技巧" />
+<meta property="og:description" content="章節目錄  1 : 建立Series
+2 : 建立DataFrame
+3 : 資料讀取" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://QuantHero-python.github.io/blog/python-environment/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-01-01T11:07:10&#43;06:00" />
-<meta property="article:modified_time" content="2022-01-01T11:07:10&#43;06:00" />
+<meta property="og:url" content="https://QuantHero-python.github.io/blog/python-pandas/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-04-01T11:07:10&#43;06:00" />
+<meta property="article:modified_time" content="2022-04-01T11:07:10&#43;06:00" />
 
 
 
@@ -312,12 +312,12 @@ if (!doNotTrack) {
 	<main>
 		
 
-<section class="page-title bg-2" style="background-image: url('/images/blog/python-environment.png');">
+<section class="page-title bg-2" style="background-image: url('/images/blog/python-pandas.png');">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Python新手安裝環境 | 寫出自己的第一行程式碼</h1>
+          <h1>超實用Python數據分析 | 掌握pandas資料科學技巧</h1>
           <p></p>
         </div>
       </div>
@@ -334,7 +334,7 @@ if (!doNotTrack) {
     <div class="row">
       <div class="col-md-8">
         <div class="post post-single">
-          <h2 class="post-title">Python新手安裝環境 | 寫出自己的第一行程式碼</h2>
+          <h2 class="post-title">超實用Python數據分析 | 掌握pandas資料科學技巧</h2>
           <div class="post-meta">
             <ul>
               <li><i class="ion-calendar"></i> :date_long</li>
@@ -343,113 +343,262 @@ if (!doNotTrack) {
                 <a class="text-primary" href="/author/oscar">Oscar</a>
               </li>
               <li><i class="ion-pricetags"></i>
-                <a href="/tags/environment">environment</a>, <a href="/tags/anaconda">anaconda</a>
+                <a href="/tags/pandas">pandas</a>, <a href="/tags/data-analyze">data analyze</a>
               </li>
             </ul>
           </div>
           <div class="post-thumb">
-            <img class="img-responsive" src="/images/blog/python-environment.png" alt="Python新手安裝環境 | 寫出自己的第一行程式碼">
+            <img class="img-responsive" src="/images/blog/python-pandas.png" alt="超實用Python數據分析 | 掌握pandas資料科學技巧">
           </div>
           <div class="post-content post-excerpt">
             <h2 id="章節目錄"><strong>章節目錄</strong></h2>
 <blockquote>
-<h3 id="1--安裝anacondabrbr2--建立虛擬開發環境brbr3--快速安裝python套件brbr4--寫出自己的第一行程式碼"><strong>1 : 安裝Anaconda</strong><br><br><strong>2 : 建立虛擬開發環境</strong><br><br><strong>3 : 快速安裝Python套件</strong><br><br><strong>4 : 寫出自己的第一行程式碼</strong></h3>
+<h3 id="1--建立seriesbrbr2--建立dataframebrbr3--資料讀取brbr4--數據處理"><strong>1 : 建立Series</strong><br><br><strong>2 : 建立DataFrame</strong><br><br><strong>3 : 資料讀取</strong><br><br><strong>4 : 數據處理</strong></h3>
 </blockquote>
 <hr>
 <hr>
 <hr>
-<h2 id="-1--安裝anaconda"><strong>✦ 1 : 安裝Anaconda</strong></h2>
-<h3 id="1-1-前往uanacondahttpswwwanacondacomu安裝系統對應的版本"><strong>1-1 前往<u><a href="https://www.anaconda.com/"><code>Anaconda</code></a></u>安裝系統對應的版本</strong></h3>
-<p><img src="/images/blog/anaconda.png" alt=""></p>
-<hr>
-<h3 id="1-2-安裝jupyter-lab"><strong>1-2 安裝Jupyter lab</strong></h3>
-<p>打開anaconda prompt輸入指令:</p>
-<pre><code>conda install jupyterlab
-</code></pre><p><img src="/images/blog/install-jupyterlab.png" alt=""></p>
-<hr>
-<h2 id="-2--建立虛擬開發環境"><strong>✦ 2 : 建立虛擬開發環境</strong></h2>
-<h3 id="2-1-新增虛擬環境"><strong>2-1 新增虛擬環境</strong></h3>
-<p>anaconda prompt內輸入指令<code>conda create -n 環境名稱 python=版本</code><br>
-Example :</p>
-<pre><code>conda create -n iTrading python=3.9
+<h2 id="-1--建立series"><strong>✦ 1 : 建立Series</strong></h2>
+<h3 id="1-1-pandas基本介紹"><strong>1-1 pandas基本介紹</strong></h3>
+<p>pandas是Python中非常常用的package，主要用來作資料處理和數據分析，不但提供了<code>Series</code>、<code>DataFrame</code>等容易使用的資料結構外，也提供了超好用的函數和功能，如果不會pandas別說你是資料科學家哦!<br></p>
+<ul>
+<li>如果使用colab的話要先安裝pandas指定版本</li>
+</ul>
+<pre><code>!pip install pandas==1.3.5
+</code></pre><ul>
+<li>查看pandas版本</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#888"># 使用套件前需要先import套件名稱</span>
+<span style="color:#080;font-weight:bold">import</span> <span style="color:#b06;font-weight:bold">pandas</span> <span style="color:#080;font-weight:bold">as</span> <span style="color:#b06;font-weight:bold">pd</span> <span style="color:#888"># 使用時將pandas命名為pd方便呼叫</span>
 
-activate iTrading
+pd.__version__
+</code></pre></div><hr>
+<h3 id="1-2-什麼是series-"><strong>1-2 什麼是Series ?</strong></h3>
+<p>Series專門用來處理單維度(一維陣列)的資料，以Excel來說，就是只有單筆資料。</p>
+<table>
+<thead>
+<tr>
+<th><code>index</code></th>
+<th><code>data</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>12</td>
+</tr>
+<tr>
+<td>1</td>
+<td>14</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15</td>
+</tr>
+<tr>
+<td>3</td>
+<td>13</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="1-3-建立series"><strong>1-3 建立Series</strong></h3>
+<p>只要將陣列資料放入<code>pd.Series</code>中就可以囉~</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">lists = [<span style="color:#00d;font-weight:bold">10</span>,<span style="color:#00d;font-weight:bold">20</span>,<span style="color:#00d;font-weight:bold">30</span>,<span style="color:#00d;font-weight:bold">40</span>,<span style="color:#00d;font-weight:bold">50</span>] <span style="color:#888"># 單維度資料</span>
 
-pip install ipykernel
+s = pd.Series(lists) <span style="color:#888"># 用pd組合成Series</span>
+s
 
-ipython kernel install --user --name=iTrading
-</code></pre><p><img src="/images/blog/create-env.png" alt=""></p>
+<span style="color:#888"># 輸出值:</span>
+<span style="color:#00d;font-weight:bold">0</span> <span style="color:#00d;font-weight:bold">10</span>
+<span style="color:#00d;font-weight:bold">1</span> <span style="color:#00d;font-weight:bold">20</span>
+<span style="color:#00d;font-weight:bold">2</span> <span style="color:#00d;font-weight:bold">30</span>
+<span style="color:#00d;font-weight:bold">3</span> <span style="color:#00d;font-weight:bold">40</span>
+<span style="color:#00d;font-weight:bold">4</span> <span style="color:#00d;font-weight:bold">50</span>
+</code></pre></div><hr>
+<h3 id="1-4-建立時間序列的series"><strong>1-4 建立時間序列的Series</strong></h3>
+<p>若沒特別設定index的話預設會是0、1、2、3&hellip;&hellip;，但通常資料會是時間搭配數據的形式。<br>例如:每天溫度紀錄、每日股價數據等等。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">price = [<span style="color:#00d;font-weight:bold">20</span>,<span style="color:#00d;font-weight:bold">23</span>,<span style="color:#00d;font-weight:bold">24</span>,<span style="color:#00d;font-weight:bold">22</span>,<span style="color:#00d;font-weight:bold">25</span>,<span style="color:#00d;font-weight:bold">27</span>]
+date = pd.date_range(<span style="color:#d20;background-color:#fff0f0">&#39;2023-01-01&#39;</span>,<span style="color:#d20;background-color:#fff0f0">&#39;2023-01-06&#39;</span>)
+
+s = pd.Series(price,index=date) <span style="color:#888"># 設定index為date</span>
+s
+
+<span style="color:#888"># 輸出值:</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">01</span>-<span style="color:#00d;font-weight:bold">01</span>    <span style="color:#00d;font-weight:bold">20</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">01</span>-<span style="color:#00d;font-weight:bold">02</span>    <span style="color:#00d;font-weight:bold">23</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">01</span>-<span style="color:#00d;font-weight:bold">03</span>    <span style="color:#00d;font-weight:bold">24</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">01</span>-<span style="color:#00d;font-weight:bold">04</span>    <span style="color:#00d;font-weight:bold">22</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">01</span>-<span style="color:#00d;font-weight:bold">05</span>    <span style="color:#00d;font-weight:bold">25</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">01</span>-<span style="color:#00d;font-weight:bold">06</span>    <span style="color:#00d;font-weight:bold">27</span>
+</code></pre></div><hr>
+<h2 id="-2--建立dataframe"><strong>✦ 2 : 建立DataFrame</strong></h2>
+<h3 id="2-1-什麼是dataframe-"><strong>2-1 什麼是DataFrame ?</strong></h3>
+<p>DataFrame是處理多維度(二維陣列)的資料，使用方式為:
+<code>pd.DataFrame(資料,index=索引,columns=欄位)</code><br></p>
+<table>
+<thead>
+<tr>
+<th><code>index</code></th>
+<th><code>data 1</code></th>
+<th><code>data 2</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>12</td>
+<td>21</td>
+</tr>
+<tr>
+<td>1</td>
+<td>14</td>
+<td>24</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15</td>
+<td>23</td>
+</tr>
+<tr>
+<td>3</td>
+<td>13</td>
+<td>22</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h3 id="2-2-複製目前環境"><strong>2-2 複製目前環境</strong></h3>
-<p>有時需要測試專案內的某些功能但又怕破壞目前Python環境內的套件版本，這時就可以複製一樣的環境來進行測試。指令為<code>conda create -n 環境名稱 --clone root</code></p>
-<pre><code>conda create -n testing --clone root
-</code></pre><hr>
-<h3 id="2-3-查詢所有虛擬環境"><strong>2-3 查詢所有虛擬環境</strong></h3>
-<p>建立非常多專案環境後可透過以下指令查詢目前所有的虛擬環境</p>
-<pre><code>conda info -e
-</code></pre><hr>
-<h3 id="2-4-移除虛擬環境"><strong>2-4 移除虛擬環境</strong></h3>
-<p>如果專案環境不再使用可以透過指令移除<code>conda remove -n 環境名稱 --all</code></p>
-<pre><code>conda remove -n testing --all
-</code></pre><hr>
-<h2 id="-3--快速安裝python套件"><strong>✦ 3 : 快速安裝Python套件</strong></h2>
-<h3 id="3-1-查詢已安裝套件版本"><strong>3-1 查詢已安裝套件版本</strong></h3>
-<p>在安裝或更新套件前需要確認目前環境的套件是否有版本不相容的問題，這時就需要先查看環境的版本</p>
-<pre><code>pip list
-</code></pre><hr>
-<h3 id="3-2-安裝單一套件"><strong>3-2 安裝單一套件</strong></h3>
-<p>安裝套件只需要輸入一行指令<code>pip install 套件名稱=版本</code><br>
-Example : 安裝pandas 1.5.1</p>
-<pre><code>pip install pandas==1.5.1
-</code></pre><hr>
-<h3 id="3-3-一鍵安裝所有指定套件"><strong>3-3 一鍵安裝所有指定套件</strong></h3>
-<p>首先將已安裝套件版本文字檔輸出至C/user/userName</p>
-<pre><code>pip freeze &gt; requirements.txt
-</code></pre><p>開啟requirements.txt並複製貼上套件名稱和版本<code>pandas==1.5.1</code><br>
-建議安裝以下套件方便後續教學使用</p>
-<pre><code>requests==2.27.1
-beautifulsoup4==4.10.0
-selenium==4.1.0
-ipywidgets==7.7.0
-seaborn==0.11.2
-plotly==5.6.0
-pyecharts==1.9.1
-yfinance==0.1.70
-python-binance==1.0.15
-pandas==1.3.5
-pandas_ta==0.3.14b
-numpy==1.21.5
-schedule==1.1.0
-</code></pre><p>複製貼上上述套件後直接在anaconda prompt上輸入指令</p>
-<pre><code>pip install -r requirements.txt
-</code></pre><hr>
-<h2 id="-4--寫出自己的第一行程式碼"><strong>✦ 4 : 寫出自己的第一行程式碼</strong></h2>
-<h3 id="4-1-開啟jupyter-lab"><strong>4-1 開啟Jupyter lab</strong></h3>
-<p>套件安裝完畢後關掉anaconda prompt再重新開啟，輸入指令</p>
-<pre><code>jupyter lab
-</code></pre><hr>
-<h3 id="4-2-jupyter-lab設定"><strong>4-2 Jupyter lab設定</strong></h3>
-<p>點選settings ➨ Advanced Settings Editor
-<img src="/images/blog/jupyterlab-settings.png" alt=""></p>
-<p>點選Notebook複製System Defaults貼至User Preferences，並將<code>lineNumbers</code>的false改成true
-<img src="/images/blog/linenumber.png" alt=""></p>
+<h3 id="2-2-建立dataframe"><strong>2-2 建立DataFrame</strong></h3>
+<p>資料可以是<code>list</code>、<code>dict</code>或<code>Series</code>來丟入pd.DataFrame中，index是縱向的資料索引、columns是橫向的欄位名稱。<br>建立一個二維的DataFrame:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">data = {
+    <span style="color:#d20;background-color:#fff0f0">&#39;data 1&#39;</span>:[<span style="color:#00d;font-weight:bold">100</span>,<span style="color:#00d;font-weight:bold">102</span>,<span style="color:#00d;font-weight:bold">106</span>,<span style="color:#00d;font-weight:bold">111</span>,<span style="color:#00d;font-weight:bold">109</span>,<span style="color:#00d;font-weight:bold">108</span>],
+    <span style="color:#d20;background-color:#fff0f0">&#39;data 2&#39;</span>:[<span style="color:#00d;font-weight:bold">11</span>,<span style="color:#00d;font-weight:bold">15</span>,<span style="color:#00d;font-weight:bold">16</span>,<span style="color:#00d;font-weight:bold">14</span>,<span style="color:#00d;font-weight:bold">15</span>,<span style="color:#00d;font-weight:bold">12</span>]
+}
+
+date = pd.date_range(<span style="color:#d20;background-color:#fff0f0">&#39;2023-02-01&#39;</span>,<span style="color:#d20;background-color:#fff0f0">&#39;2023-02-06&#39;</span>)
+
+df = pd.DataFrame(data,index=date)
+df
+
+<span style="color:#888"># 輸出值:</span>
+index	    data <span style="color:#00d;font-weight:bold">1</span>	data <span style="color:#00d;font-weight:bold">2</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">02</span>-<span style="color:#00d;font-weight:bold">01</span>	<span style="color:#00d;font-weight:bold">100</span>	    <span style="color:#00d;font-weight:bold">11</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">02</span>-<span style="color:#00d;font-weight:bold">02</span>	<span style="color:#00d;font-weight:bold">102</span>	    <span style="color:#00d;font-weight:bold">15</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">02</span>-<span style="color:#00d;font-weight:bold">03</span>	<span style="color:#00d;font-weight:bold">106</span>	    <span style="color:#00d;font-weight:bold">16</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">02</span>-<span style="color:#00d;font-weight:bold">04</span>	<span style="color:#00d;font-weight:bold">111</span>	    <span style="color:#00d;font-weight:bold">14</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">02</span>-<span style="color:#00d;font-weight:bold">05</span>	<span style="color:#00d;font-weight:bold">109</span>	    <span style="color:#00d;font-weight:bold">15</span>
+<span style="color:#00d;font-weight:bold">2023</span>-<span style="color:#00d;font-weight:bold">02</span>-<span style="color:#00d;font-weight:bold">06</span>	<span style="color:#00d;font-weight:bold">108</span>	    <span style="color:#00d;font-weight:bold">12</span>
+</code></pre></div><p>另外一種寫法是省略掉命名data的步驟，直接丟到在函數裡:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">date = date = pd.date_range(<span style="color:#d20;background-color:#fff0f0">&#39;2023-02-01&#39;</span>,<span style="color:#d20;background-color:#fff0f0">&#39;2023-02-06&#39;</span>)
+
+df = pd.DataFrame({
+    <span style="color:#d20;background-color:#fff0f0">&#39;data 1&#39;</span>:[<span style="color:#00d;font-weight:bold">100</span>,<span style="color:#00d;font-weight:bold">102</span>,<span style="color:#00d;font-weight:bold">106</span>,<span style="color:#00d;font-weight:bold">111</span>,<span style="color:#00d;font-weight:bold">109</span>,<span style="color:#00d;font-weight:bold">108</span>],
+    <span style="color:#d20;background-color:#fff0f0">&#39;data 2&#39;</span>:[<span style="color:#00d;font-weight:bold">11</span>,<span style="color:#00d;font-weight:bold">15</span>,<span style="color:#00d;font-weight:bold">16</span>,<span style="color:#00d;font-weight:bold">14</span>,<span style="color:#00d;font-weight:bold">15</span>,<span style="color:#00d;font-weight:bold">12</span>]
+},index=date)
+
+df
+</code></pre></div><hr>
+<h2 id="-3--資料讀取"><strong>✦ 3 : 資料讀取</strong></h2>
+<h3 id="3-1-讀取資料格式"><strong>3-1 讀取資料格式</strong></h3>
+<p>pandas可從網站、csv、Excel、資料庫中讀取資料，匯入pandas後進行數據清理、分析或繪製圖表。<br>常用方式:</p>
+<ul>
+<li>read_csv ► 讀取csv檔</li>
+<li>read_html ► 讀取網頁中表格資料</li>
+<li>read_json ► 讀取json檔</li>
+<li>read_sql ► 讀取SQLite資料庫資料</li>
+</ul>
 <hr>
-<h3 id="4-3-選擇專案環境並開啟notebook"><strong>4-3 選擇專案環境並開啟Notebook</strong></h3>
-<p>點選launcher並選擇自己創建的環境名稱，如此一來就可以開啟新的Notebook準備寫程式囉~
-<img src="/images/blog/launcher.png" alt=""></p>
+<h3 id="3-2-讀取網頁中表格"><strong>3-2 讀取網頁中表格</strong></h3>
+<p>讀取<a href="https://rate.bot.com.tw/xrt?Lang=zh-TW"><u><code>台灣銀行匯率</code></u></a>的換匯表格</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#080;font-weight:bold">import</span> <span style="color:#b06;font-weight:bold">pandas</span> <span style="color:#080;font-weight:bold">as</span> <span style="color:#b06;font-weight:bold">pd</span>
+
+url = <span style="color:#d20;background-color:#fff0f0">&#39;https://rate.bot.com.tw/xrt?Lang=zh-TW&#39;</span> <span style="color:#888"># 輸入網站網址</span>
+
+pd.read_html(url)[<span style="color:#00d;font-weight:bold">0</span>] <span style="color:#888"># 選取第0個表格</span>
+</code></pre></div><hr>
+<h3 id="3-3-讀取csv檔"><strong>3-3 讀取csv檔</strong></h3>
+<p>首先到<a href="https://data.gov.tw/"><u><code>政府資料開放平台</code></u></a> ➨ 選擇<code>求職及就業</code> ➨ 選擇<code>瀏覽次數多至少</code> ➨ 點選<code>初任人員每人每月經常性薪資</code> ➨ 下載<code>109年各職類別初任人員每人每月經常性薪資─按行業別分</code>的csv檔。</p>
+<ul>
+<li>在本地端的Jupyterlab上執行的話，將csv檔存在<code>目前所在資料夾</code></li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#080;font-weight:bold">import</span> <span style="color:#b06;font-weight:bold">pandas</span> <span style="color:#080;font-weight:bold">as</span> <span style="color:#b06;font-weight:bold">pd</span>
+
+data = pd.read_csv(<span style="color:#d20;background-color:#fff0f0">&#39;A17000000J-020066-tqz.csv&#39;</span>)
+data
+</code></pre></div><ul>
+<li>在Colab上執行的話，將csv檔存在雲端硬碟內的<code>Colab Notebooks</code></li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#080;font-weight:bold">import</span> <span style="color:#b06;font-weight:bold">pandas</span> <span style="color:#080;font-weight:bold">as</span> <span style="color:#b06;font-weight:bold">pd</span>
+<span style="color:#080;font-weight:bold">from</span> <span style="color:#b06;font-weight:bold">google.colab</span> <span style="color:#080;font-weight:bold">import</span> drive
+drive.mount(<span style="color:#d20;background-color:#fff0f0">&#39;/content/drive&#39;</span>)
+
+data = pd.read_csv(<span style="color:#d20;background-color:#fff0f0">&#39;drive/MyDrive/Colab Notebooks/A17000000J-020066-tqz.csv&#39;</span>)
+data
+</code></pre></div><p><img src="/images/blog/read_csv.png" alt=""></p>
 <hr>
-<h3 id="4-4-跟世界說聲hello"><strong>4-4 跟世界說聲Hello</strong></h3>
-<p>在儲存格(cells)內輸入</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#080;font-weight:bold">print</span>(<span style="color:#d20;background-color:#fff0f0">&#39;Hello World !&#39;</span>)
-</code></pre></div><p>點選上方三角形執行程式碼(快捷鍵:<code>shift + enter</code> 強烈建議學起來!)
-<img src="/images/blog/helloworld.png" alt=""></p>
-<p>這樣就成功執行我們的第一行程式碼囉~~~</p>
+<h2 id="-4--數據處理"><strong>✦ 4 : 數據處理</strong></h2>
+<h3 id="4-1-查看資料資訊"><strong>4-1 查看資料資訊</strong></h3>
+<p>在獲取資料後通常需要先確認資料內數據的格式，像是資料中的數字是否為<code>int/float(數值)</code>格式，若是<code>str(字串)</code>則需要透過pandas將<code>字串轉成數值</code>才能進行計算分析。<br>以上面的csv檔為範例:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">data.dtypes
+
+<span style="color:#888"># 輸出值:</span>
+<span style="color:#a61717;background-color:#e3d2d2">年度</span>                      int64
+<span style="color:#a61717;background-color:#e3d2d2">行業別</span>                    <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">經常性薪資</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>                int64
+<span style="color:#a61717;background-color:#e3d2d2">經常性薪資</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>             float64
+<span style="color:#a61717;background-color:#e3d2d2">專業人員</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>                <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">專業人員</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>               <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">技術員及助理專業人員</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>          <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">技術員及助理專業人員</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>         <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">事務支援人員</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>              <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">事務支援人員</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>             <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">服務及銷售工作人員</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>           <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">服務及銷售工作人員</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>          <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">技藝</span>_機械設備操作及組裝人員-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>      <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">技藝</span>_機械設備操作及組裝人員-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>     <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">基層技術工及勞力工</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>           <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">基層技術工及勞力工</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>          <span style="color:#038">object</span>
+dtype: <span style="color:#038">object</span>
+</code></pre></div><hr>
+<h3 id="4-2-資料處理"><strong>4-2 資料處理</strong></h3>
+<p>從output來看，<code>專業人員-薪資</code>的格式是<code>object</code>(字串)，對於Python來說是無法進行計算，所以即使表格上顯示的是數字，但實際上仍是文字，接下來就是要將<code>object</code>轉成<code>float</code>的格式。<br>首先先篩選出要轉換的columns(欄位名稱)</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#888"># 除了年度和行業別外都要轉成數值</span>
+<span style="color:#888"># data.columns[2:] 表示選取第2個columns名稱(經常性薪資-薪資)之後的；2:表示從2開始往後數</span>
+col = data.columns[<span style="color:#00d;font-weight:bold">2</span>:]
+data[col] <span style="color:#888"># []內放入要選取的columns欄位</span>
+
+<span style="color:#888"># 字串轉數值</span>
+<span style="color:#888"># applymap為針對每一列去套入函式內</span>
+<span style="color:#888"># lambda為簡化版的def函式，冒號左邊為參數，右邊為函式內容</span>
+<span style="color:#888"># 使用pd.to_numeric將str轉成float，errors=&#39;coerce&#39;表示若無法轉換則顯示Nan</span>
+data[col] = data[col].applymap(<span style="color:#080;font-weight:bold">lambda</span> s:pd.to_numeric(<span style="color:#038">str</span>(s),errors=<span style="color:#d20;background-color:#fff0f0">&#39;coerce&#39;</span>))
+data.dtypes
+
+<span style="color:#888"># 輸出值:</span>
+<span style="color:#a61717;background-color:#e3d2d2">年度</span>                      int64
+<span style="color:#a61717;background-color:#e3d2d2">行業別</span>                    <span style="color:#038">object</span>
+<span style="color:#a61717;background-color:#e3d2d2">經常性薪資</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>                int64
+<span style="color:#a61717;background-color:#e3d2d2">經常性薪資</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>             float64
+<span style="color:#a61717;background-color:#e3d2d2">專業人員</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>               float64
+<span style="color:#a61717;background-color:#e3d2d2">專業人員</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>              float64
+<span style="color:#a61717;background-color:#e3d2d2">技術員及助理專業人員</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>         float64
+<span style="color:#a61717;background-color:#e3d2d2">技術員及助理專業人員</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>        float64
+<span style="color:#a61717;background-color:#e3d2d2">事務支援人員</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>             float64
+<span style="color:#a61717;background-color:#e3d2d2">事務支援人員</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>            float64
+<span style="color:#a61717;background-color:#e3d2d2">服務及銷售工作人員</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>          float64
+<span style="color:#a61717;background-color:#e3d2d2">服務及銷售工作人員</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>         float64
+<span style="color:#a61717;background-color:#e3d2d2">技藝</span>_機械設備操作及組裝人員-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>     float64
+<span style="color:#a61717;background-color:#e3d2d2">技藝</span>_機械設備操作及組裝人員-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>    float64
+<span style="color:#a61717;background-color:#e3d2d2">基層技術工及勞力工</span>-<span style="color:#a61717;background-color:#e3d2d2">薪資</span>          float64
+<span style="color:#a61717;background-color:#e3d2d2">基層技術工及勞力工</span>-<span style="color:#a61717;background-color:#e3d2d2">女</span>/<span style="color:#a61717;background-color:#e3d2d2">男</span>         float64
+dtype: <span style="color:#038">object</span>
+</code></pre></div><h3 id="詳細程式碼可點擊u掌握pandas資料科學技巧uimagesblogopen-in-colabsvghttpscolabresearchgooglecomdrive1swbcasfhkjh6x-jlrdlu7zp0vtzz5d4ruspsharingbr以上範例都幫大家寫好囉建議實際練習會學得更快哦">詳細程式碼可點擊<a href="https://colab.research.google.com/drive/1SWBcAsFhkJh6x-jLrdLu7ZP0Vtzz5D4R?usp=sharing"><strong><u><code>掌握Pandas資料科學技巧</code></u></strong><img src="/images/blog/open-in-colab.svg" alt=""></a><br>以上範例都幫大家寫好囉!建議實際練習會學得更快哦~</h3>
 <hr>
 <hr>
 <hr>
 <h2 id="結論"><strong>結論</strong></h2>
 <blockquote>
-<h4 id="這個單元教導大家安裝anaconda建立專案環境並快速一行指令安裝所有套件版本成功執行自己的第一行程式碼下一個單元會示範更適合新手撰寫程式的介面省去許多設定環境的步驟直接在雲端上就可以開始寫程式囉"><strong>這個單元教導大家安裝Anaconda，建立專案環境，並快速一行指令安裝所有套件版本，成功執行自己的第一行程式碼，下一個單元會示範更適合新手撰寫程式的介面，省去許多設定環境的步驟，直接在雲端上就可以開始寫程式囉!</strong></h4>
+<h4 id="本單元詳細介紹了資料科學家必學的pandas並實際演練如何從網站上讀取表格以及讀取下載下來的csv檔最後進行數據處理將資料中的數字成功轉成數值方便未來進行計算以及數據分析哦brbr如果對於python基礎語法還不熟悉的可以參考前一篇brbru進入python的第一堂課--一小時上手python基礎語法ublogpython-basic"><strong>本單元詳細介紹了資料科學家必學的pandas，並實際演練如何從網站上讀取表格以及讀取下載下來的csv檔，最後進行數據處理，將資料中的數字成功轉成數值，方便未來進行計算以及數據分析哦!<br><br>如果對於Python基礎語法還不熟悉的可以參考前一篇:<br><br><a href="/blog/python-basic"><u>進入Python的第一堂課 | 一小時上手Python基礎語法</u></a></strong></h4>
 </blockquote>
 
           </div>

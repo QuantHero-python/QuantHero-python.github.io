@@ -8,6 +8,17 @@
     <language>en-US</language>
     <lastBuildDate>Fri, 01 Apr 2022 11:07:10 +0600</lastBuildDate><atom:link href="https://QuantHero-python.github.io/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Python網站爬蟲實戰 | 快速爬取證交所個股資訊</title>
+      <link>https://QuantHero-python.github.io/blog/python-crawl-twse/</link>
+      <pubDate>Fri, 01 Apr 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/blog/python-crawl-twse/</guid>
+      <description>章節目錄  1 : 個股日成交資訊爬蟲
+2 : 進行資料處理
+3 : 製作第一支自動化爬蟲程式</description>
+    </item>
+    
+    <item>
       <title>超實用Python數據分析 | 掌握pandas資料科學技巧</title>
       <link>https://QuantHero-python.github.io/blog/python-pandas/</link>
       <pubDate>Fri, 01 Apr 2022 11:07:10 +0600</pubDate>

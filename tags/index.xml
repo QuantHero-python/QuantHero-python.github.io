@@ -8,6 +8,15 @@
     <language>en-US</language>
     <lastBuildDate>Fri, 01 Apr 2022 11:07:10 +0600</lastBuildDate><atom:link href="https://QuantHero-python.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>crawl</title>
+      <link>https://QuantHero-python.github.io/tags/crawl/</link>
+      <pubDate>Fri, 01 Apr 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/tags/crawl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>data analyze</title>
       <link>https://QuantHero-python.github.io/tags/data-analyze/</link>
       <pubDate>Fri, 01 Apr 2022 11:07:10 +0600</pubDate>
@@ -22,6 +31,15 @@
       <pubDate>Fri, 01 Apr 2022 11:07:10 +0600</pubDate>
       
       <guid>https://QuantHero-python.github.io/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stock</title>
+      <link>https://QuantHero-python.github.io/tags/stock/</link>
+      <pubDate>Fri, 01 Apr 2022 11:07:10 +0600</pubDate>
+      
+      <guid>https://QuantHero-python.github.io/tags/stock/</guid>
       <description></description>
     </item>
     
